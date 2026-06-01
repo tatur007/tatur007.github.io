@@ -7,11 +7,9 @@
 
     <title>Setyora Labs</title>
 
-    <!-- FAVICON -->
     <link rel="icon" type="image/png" href="setyora_icon.png">
 
     <style>
-
         *{
             margin:0;
             padding:0;
@@ -32,21 +30,13 @@
         .container{
             max-width:900px;
             width:100%;
-
             background: rgba(255,255,255,0.05);
-
             border:1px solid rgba(255,255,255,0.1);
-
             backdrop-filter: blur(10px);
-
             border-radius:24px;
-
             padding:40px;
-
             box-shadow:0 10px 40px rgba(0,0,0,0.4);
         }
-
-        /* LOGO AREA */
 
         .logo-container{
             display:flex;
@@ -55,29 +45,23 @@
             margin-bottom:10px;
         }
 
-            .main-logo{
-                width:90px;
-                height:90px;
-                object-fit:contain;
-            
-                filter:
-                    drop-shadow(0 0 12px rgba(96,165,250,0.25))
-                    drop-shadow(0 0 20px rgba(168,85,247,0.18));
-            
-                display:block;
-            }
+        .main-logo{
+            width:90px;
+            height:90px;
+            object-fit:contain;
+            filter:
+                drop-shadow(0 0 12px rgba(96,165,250,0.25))
+                drop-shadow(0 0 20px rgba(168,85,247,0.18));
+            display:block;
+        }
 
         .logo-text{
             font-size:48px;
             font-weight:bold;
-
             background: linear-gradient(90deg,#60a5fa,#a855f7);
-
             -webkit-background-clip:text;
             -webkit-text-fill-color:transparent;
         }
-
-        /* SUBTITLE */
 
         .subtitle{
             color:#cbd5e1;
@@ -85,8 +69,6 @@
             margin-bottom:35px;
             line-height:1.6;
         }
-
-        /* SECTION */
 
         .section{
             margin-top:35px;
@@ -98,31 +80,22 @@
             color:#93c5fd;
         }
 
-        /* PROJECT GRID */
-
         .grid{
             display:grid;
             grid-template-columns:1fr 1fr;
             gap:15px;
         }
 
-        /* CARD */
-
         .card{
             background: rgba(255,255,255,0.06);
-
             border:1px solid rgba(255,255,255,0.08);
-
             padding:20px;
-
             border-radius:18px;
-
             transition:0.3s;
         }
 
         .card:hover{
             transform:translateY(-5px);
-
             background: rgba(255,255,255,0.1);
         }
 
@@ -137,7 +110,23 @@
             line-height:1.6;
         }
 
-        /* SOCIAL LINKS */
+        .app-btn{
+            display:inline-block;
+            margin-top:18px;
+            padding:12px 18px;
+            border-radius:12px;
+            background:linear-gradient(90deg,#2563eb,#9333ea);
+            color:white;
+            text-decoration:none;
+            font-size:14px;
+            font-weight:bold;
+            transition:0.3s;
+        }
+
+        .app-btn:hover{
+            transform:translateY(-3px);
+            box-shadow:0 8px 25px rgba(147,51,234,0.35);
+        }
 
         .social-links{
             display:flex;
@@ -149,25 +138,18 @@
         .social-btn{
             width:64px;
             height:64px;
-
             border-radius:18px;
-
             background:rgba(255,255,255,0.08);
-
             border:1px solid rgba(255,255,255,0.08);
-
             display:flex;
             justify-content:center;
             align-items:center;
-
             transition:0.3s;
-
             text-decoration:none;
         }
 
         .social-btn:hover{
             transform:translateY(-5px);
-
             background:rgba(255,255,255,0.14);
         }
 
@@ -176,15 +158,11 @@
             height:32px;
         }
 
-        /* CONTACT */
-
         .contact{
             margin-top:15px;
             font-size:16px;
             color:#e2e8f0;
         }
-
-        /* FOOTER */
 
         .footer{
             margin-top:45px;
@@ -193,10 +171,7 @@
             font-size:14px;
         }
 
-        /* MOBILE */
-
         @media(max-width:700px){
-
             .grid{
                 grid-template-columns:1fr;
             }
@@ -214,9 +189,7 @@
                 width:75px;
                 height:75px;
             }
-
         }
-
     </style>
 
 </head>
@@ -225,10 +198,7 @@
 
 <div class="container">
 
-    <!-- LOGO -->
-
     <div class="logo-container">
-
         <img src="setyora_icon.png"
              alt="Setyora Labs Logo"
              class="main-logo">
@@ -236,25 +206,18 @@
         <div class="logo-text">
             Setyora Labs
         </div>
-
     </div>
-
-    <!-- SUBTITLE -->
 
     <div class="subtitle">
         Solo indie developer creating simple yet useful Android apps and games.
     </div>
 
-    <!-- PROJECTS -->
-
     <div class="section">
-
         <h2>Projects</h2>
 
         <div class="grid">
 
             <div class="card">
-
                 <h3>Simple Loan Calculator</h3>
 
                 <p>
@@ -262,10 +225,15 @@
                     export features, and multi-currency support.
                 </p>
 
+                <a class="app-btn"
+                   href="https://play.google.com/store/apps/details?id=tatur.viewer.simpleloancalculator"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    View on Google Play
+                </a>
             </div>
 
             <div class="card">
-
                 <h3>Endless Streak Quiz</h3>
 
                 <p>
@@ -273,70 +241,55 @@
                     global questions, and competitive gameplay.
                 </p>
 
+                <a class="app-btn"
+                   href="#"
+                   onclick="return false;">
+                    Coming Soon
+                </a>
             </div>
 
         </div>
-
     </div>
 
-    <!-- LINKS -->
-
     <div class="section">
-
         <h2>Links</h2>
 
         <div class="social-links">
 
-            <!-- GOOGLE PLAY -->
-
             <a class="social-btn"
                href="https://play.google.com/store/apps/dev?id=8396518609609196773"
-               target="_blank">
-
+               target="_blank"
+               rel="noopener noreferrer">
                 <img src="https://cdn-icons-png.flaticon.com/512/888/888857.png"
                      alt="Google Play">
-
             </a>
-
-            <!-- YOUTUBE -->
 
             <a class="social-btn"
                href="https://www.youtube.com/@Setyoradev"
-               target="_blank">
-
+               target="_blank"
+               rel="noopener noreferrer">
                 <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png"
                      alt="YouTube">
-
             </a>
-
-            <!-- GITHUB -->
 
             <a class="social-btn"
                href="https://github.com/tatur007"
-               target="_blank">
-
+               target="_blank"
+               rel="noopener noreferrer">
                 <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png"
                      alt="GitHub">
-
             </a>
 
         </div>
-
     </div>
 
-    <!-- CONTACT -->
-
     <div class="section">
-
         <h2>Contact</h2>
 
         <div class="contact">
             setyora.dev@gmail.com
         </div>
-
     </div>
-
-    <!-- FOOTER -->
 
     <div class="footer">
         © 2026 Setyora Labs. All rights reserved.
